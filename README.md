@@ -61,44 +61,74 @@ Step 4
 Gateway checks whether the request limit is exceeded.
 
 Step 5
+
 If limit not exceeded → Request forwarded to backend service.
-If limit exceeded → Request blocked with error response.
+If limit exceeded → Request blocked with error response. <br>
+
 Example
 Request Limit
 10 requests per minute per user
+
 Success Response
 {
   "status": "success",
   "message": "Request allowed"
 }
+
 Error Response
 {
   "status": "error",
   "message": "Too many requests"
 }
+
+
 Setup Instructions
+
+
 Clone Repository
+
 git clone https://github.com/shivani-009/traffic-control-gateway.git
+
 Go to Project Directory
+
 cd your-repository-name
+
 Start Redis Server
+
 redis-server
+
 Run the Application
+
 mvn spring-boot:run
+
 Use Cases
+
 API protection
+
 Prevent spam traffic
+
 Request throttling
+
 Backend security
+
 Traffic control
+
 Scalable microservices architecture
+
 Future Improvements
+
 JWT Authentication
+
 Role-based rate limiting
+
 Admin dashboard for monitoring
+
 Docker support
+
 Kubernetes deployment
+
 Analytics and logging
+
 Learning Outcomes
 
 This project demonstrates:
@@ -109,6 +139,8 @@ Backend Scalability
 Redis Integration
 Rate Limiting Concepts
 Spring Cloud Gateway
+
+
 Author
 
 Shivani Vishwakarma
