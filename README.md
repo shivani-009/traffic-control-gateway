@@ -78,7 +78,7 @@ Error Response
 }
 Setup Instructions
 Clone Repository
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/shivani-009/traffic-control-gateway.git
 Go to Project Directory
 cd your-repository-name
 Start Redis Server
